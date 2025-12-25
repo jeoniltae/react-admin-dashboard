@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 import "./chartBox.scss";
 
-type props = {
+type Props = {
   title: string;
   number: number | string;
   icon: string;
@@ -12,7 +12,7 @@ type props = {
   percentage: number;
 };
 
-const ChartBox = (props: props) => {
+const ChartBox = (props: Props) => {
   return (
     <div className="chartBox">
       <div className="boxInfo">
